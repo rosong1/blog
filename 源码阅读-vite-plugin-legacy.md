@@ -1,4 +1,4 @@
-# vite-plugin-legacy 1.6.3
+# @vite/plugin-legacy 1.6.3
 
 > 生成兼容性 js 代码，集成 babel 做的事情
 
