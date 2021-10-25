@@ -162,3 +162,9 @@ const legacyEnvPlugin = {
 整体思路是，结合`babel`检测源码兼容性，生成对应的polyfill文件，再注入到html。
 有一个注意点是：因为`renderChunk`的执行时机比`generateBundle`要早
 所以是先执行`legacyPostPlugin`插件的`renderChunk`检测兼容性，接着`legacyGenerateBundlePlugin`才能在`generateBundle`生成兼容性代码，和阅读顺序相反。
+
+#### 参考
+1. [rollup output-generation-hooks](https://rollupjs.org/guide/en/#output-generation-hooks)
+![output-generation-hooks](https://github.com/rosong1/blog/blob/master/images/rollup-outputhook.jpeg)
+
+2. [vite plugin hooks](https://vitejs.dev/guide/api-plugin.html#universal-hooks)
